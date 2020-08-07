@@ -98,7 +98,7 @@
 			text-align:center;
 			height:300px;
 			color:#fff;
-			line-height:26px;
+			line-height:21px;
 		}
 		
 		@media(max-width:1200px){
@@ -111,7 +111,7 @@
 				text-align:center;
 				height:350px;
 				color:#fff;
-				line-height:26px;
+				line-height:21px;
 			}
 		}
 		
@@ -125,7 +125,7 @@
 				text-align:center;
 				height:300px;
 				color:#fff;
-				line-height:26px;
+				line-height:21px;
 			}
 		}
 		
@@ -139,7 +139,7 @@
 				text-align:center;
 				height:475px;
 				color:#fff;
-				line-height:26px;
+				line-height:21px;
 			}
 		}
 		td ul{
@@ -179,7 +179,7 @@
 		
 		@media (max-width:900px){
 			.overflow{
-				overflow: auto;
+				overflow: scroll;
 			}
 		}
 		
@@ -393,6 +393,12 @@
 		border-radius:50%;
 		z-index:20;
 	}
+	.btnwidth{}
+	@media(max-width:400px){
+		.btnwidth{
+			width:120px;
+		}
+	}
 	</style>
   </head>
   <body> 
@@ -447,24 +453,25 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-9 pb-5 overviewbackground" >
+					<div class="col-lg-9 pb-3 overviewbackground" >
 						<div class="d-flex greeting justify-content-between">
 							<h4>Good morning, Chandan!</h4>
 							<div class="dropdown">
-								<button class="bg-white btn pl-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								  <span>2020-2021</span> <i class="fas fa-angle-down pl-xs-0 pl-sm-0 dropdownicon"></i>
+								<button class="bg-white btn btnwidth pl-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  <span>2020-2021</span> <i class="fas fa-angle-down dropdownicon"></i>
 								</button>
 								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 								  <a class="dropdown-item" href="#">2020-2021</a>
 								  <a class="dropdown-item" href="#">2020-2021</a>
 								  <a class="dropdown-item" href="#">2020-2021</a>
 								</div>
-							 </div>
+							 </div> 
+							 
 						</div>
 						<div class="mt-3">	
 							<h2 class="second float-left">Mission</h2><p class="height" style="border-radius:0px 3px 8px 0px">To provide widely accessible and affordable health care technology all over the world.</p>
 							<h2 class="second float-left">Vision</h2><p class="height" style="border-radius:0px 3px 8px 0px">We aim to be asia’s leading health care company.</p>
-							<div class="overflow">
+							<div class="overflow-hidden">
 								<h2 class="second float-left">Values</h2>
 								<div class="d-flex overflow" style="border-top:2px solid #ff7f56;border-radius:0px 3px 8px 0px">
 									<table class="table bg-white value" style="border-radius:0px 3px 8px 0px">
@@ -479,7 +486,7 @@
 								</div>	
 							</div>
 						
-							<div class="d-flex overflow">
+							<div class="d-flex">
 								<h2 class="tableside float-left mt-2">SWOT</h2>
 								<div class="d-flex overflow">
 									<table class="table mt-2 bg-white width" style="border-radius:0px 3px 8px 0px">
@@ -565,10 +572,10 @@
 							<div class="float-right mt-4 overviewbackground">
 								<div class="search-icon d-flex">
 									<i class="fas fa-search overviewsearchicon"></i>
-									<input type="text" placeholder="search anything" class="searchbar">
+									<input type="text" placeholder="Search anything..." class="searchbar">
 								</div>
 							</div>
-							<div class="mt-3">
+							<div class="mt-3 pb-5">
 								<div class="activity">
 													
 									<div class="p-3" style="border-bottom:1px solid rgba(49, 48, 56, 0.15);">
@@ -640,7 +647,7 @@
 											</div>
 										<div class="white-line"></div>	
 										
-										<div class="list-item-wrapper">
+										<div class="list-item-wrapper pb-3">
 											<div class="list-bullet">
 												<div class="mycircle"></div>
 											</div>
