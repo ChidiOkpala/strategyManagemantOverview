@@ -238,8 +238,9 @@
 		.dropdownicon{
 			color:rgba(49, 48, 56, 0.3);
 		}
-		.dropdown button{
-			height:40px;
+		.dropdownbutton{
+			height:35px;
+			width:150px;
 		}
 		
 		@media(max-width:400px){
@@ -391,6 +392,7 @@
 		font-size: 16px;
 		line-height: 21px;
 		color: #313038;
+		margin-bottom:7px;
 
 	}
 	.red-line {
@@ -423,6 +425,7 @@
 			width:120px;
 		}
 	}
+	
 	</style>
   </head>
   <body> 
@@ -481,15 +484,18 @@
 						<div class="d-flex greeting justify-content-between">
 							<h4>Good morning, Chandan!</h4>
 							<div class="dropdown">
-								<button class="bg-white btn btnwidth pl-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								  <span>2020-2021</span> <i class="fas fa-angle-down pl-md-4 dropdownicon"></i>
-								</button>
-								<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-								  <a class="dropdown-item" href="#">2020-2021</a>
-								  <a class="dropdown-item" href="#">2020-2021</a>
-								  <a class="dropdown-item" href="#">2020-2021</a>
-								</div>
+								 <select class="dropdown dropdownbutton" style="border:none; border-radius:3px;color:rgba(49, 48, 56, 0.3)">
+				
+									<option value="Challenges">2020-2021</option>
+									<option value="Projects">2020-2021</option>
+									<option value="Community">2020-2021</option>
+									<option value="Open source">2020-2021</option>
+								
+								</select>
 							 </div> 
+							 
+							 
+							
 							 
 						</div>
 						<div class="mt-3">	
