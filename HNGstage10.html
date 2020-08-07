@@ -184,7 +184,7 @@
 		}
 		
 		.width{
-			min-width:700px;
+			min-width:500px;
 			height:300px;
 		}
 		
@@ -228,8 +228,14 @@
 		.dropdown button{
 			height:40px;
 		}
+		
+		@media(max-width:400px){
+			.dropdownicon{
+				display:none;
+			}
+		}
 		.topicon{
-			padding-left:92%;
+			padding-left:94%;
 		}
 		
 		.checkbtn{
@@ -244,7 +250,12 @@
 		#check{
 			display:none;
 		}
-			
+		
+		@media(max-width:1400px){
+			.topicon{
+				padding-left:92%;
+			}
+		}
 		@media(max-width:1200px){
 			.topicon{
 				padding-left:90%;
