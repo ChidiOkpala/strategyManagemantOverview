@@ -9,512 +9,96 @@
 	
 	<script src="https://kit.fontawesome.com/5760397bba.js" crossorigin="anonymous"></script>
 
+	<link href="./overview.css" rel="stylesheet" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Overview</title>
 	
-	<style>
-		body{
-			font-family:DM sans;
-		}
-		.navigation{
-			margin-top:183px;
-		}
-		.navigation ul li a{
-			font-style: normal;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 21px;
-		}
-		.muted{
-			color: rgba(49, 48, 56, 0.3);
-		}
-		
-		.overviewbackground{
-			background: #F5F5FB;
-		}
-		
-		.overviewnavigationactive{
-			border-left: 3px solid #3C38F8;
-			color:#3C38F8;
-		}
-		
-		.greeting{
-			padding-top:25px;
-			font-family: DM Sans;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 21px;
-			color: #313038;
-		}
-		
-		p {
-			display:flex;
-			justify-content:center;
-			align-items:center;
-			border-top: 2px solid #ff7f56;
-			background-color:white;
-		}
-		
-		.height{
-			height:100px;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 21px;
-			text-align: center;
-			color: #313038;
-		}
-		
-		h2 { 
-			writing-mode: vertical-rl; 
-			transform: rotate(180deg); 
-			margin: 0 auto; 
-			position: relative; 
-			right: 0px; 
-		}
-		
-		.second{
-			background:#ff7f56;
-			border-radius:0px 8px 8px 0;
-			padding-left:5px;
-			padding-right:5px;
-			height:100px;
-			font-family: DM Sans;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 21px;
-			text-align: center;
-			color: #FFFFFF;
-		}
-		.tableside{
-			font: normal 16px DM Sans;
-			background:#ff7f56;
-			border-radius:0px 8px 8px 0;
-			padding-left:5px;
-			padding-right:5px;
-			text-align:center;
-			height:305px;
-			color:#fff;
-			line-height:21px;
-		}
-		
-		@media(max-width:1200px){
-			.tableside{
-				font: normal 16px DM Sans;
-				background:#ff7f56;
-				border-radius:0px 8px 8px 0;
-				padding-left:5px;
-				padding-right:5px;
-				text-align:center;
-				height:367px;
-				color:#fff;
-				line-height:21px;
-			}
-		}
-		
-		@media(max-width:800px){
-			.tableside{
-				font: normal 16px DM Sans;
-				background:#ff7f56;
-				border-radius:0px 8px 8px 0;
-				padding-left:5px;
-				padding-right:5px;
-				text-align:center;
-				height:305px;
-				color:#fff;
-				line-height:21px;
-			}
-		}
-		
-		@media(max-width:600px){
-			.tableside{
-				font: normal 16px DM Sans;
-				background:#ff7f56;
-				border-radius:0px 8px 8px 0;
-				padding-left:5px;
-				padding-right:5px;
-				text-align:center;
-				height:495px;
-				color:#fff;
-				line-height:21px;
-			}
-		}
-		td ul{
-			margin:0px;
-			padding:0px;
-			padding-left:10px;	
-		}
-		th{
-			font-style: normal;
-			font-weight: normal;
-			font-size: 16px;
-			line-height: 21px;
-		}
-		td{
-			border-right:1px solid rgba(49, 48, 56, 0.15);
-			font-style: normal;
-			font-weight: normal;
-			font-size: 15px;
-			line-height: 16px;
-			color: #313038;
-			font-family:DM sans;
-		}
-		td ul li{
-			font-style: normal;
-			font-weight: normal;
-			font-size: 15px;
-			line-height: 16px;
-			color: #313038;
-			font-family:DM sans;
-			padding-bottom:10px;
-			
-		}
-		
-		.overflow{
-			
-		}
-		
-		
-		@media (max-width:900px){
-			.overflow{
-				overflow: scroll;
-			}
-			
-			.overflow::-webkit-scrollbar {
-			  display: none;
-			}
-
-
-			.overflow {
-			  -ms-overflow-style: none; 
-			  scrollbar-width: none; 
-			}
-		}
-		
-		.width{
-			min-width:500px;
-			height:305px;
-		}
-		
-		.value{
-			min-width:550px;
-			height:100px;
-			margin-top:0;
-			padding-top:0;
-		}
-		.valuepadding{
-			padding-top:35px !important;
-		}
-		
-		.searchbar {
-			background: #fff;
-			font-size: 12px;
-			width: 140px;
-			border: none;
-			outline: none;
-			margin-left:2px;
-			padding: 10px 5px 10px 0px;
-		}
-		
-		.search-icon{
-			padding-left:5px;
-			border: 1px solid rgba(49, 48, 56, 0.15);
-			box-shadow: 0px 0px 16px rgba(60, 56, 248, 0.05);
-			border-radius: 4px;
-			height:40px;
-			background-color:#fff;
-		}
-		.overviewsearchicon{
-			background-color:#fff;
-			color:rgba(49, 48, 56, 0.3);
-			display:flex;
-			align-items:center;
-			padding-left:5px;
-			padding-right:5px;
-		}
-		
-		.dropdownicon{
-			color:rgba(49, 48, 56, 0.3);
-		}
-		.dropdownbutton{
-			height:35px;
-			width:150px;
-		}
-		
-		@media(max-width:400px){
-			.dropdownicon{
-				display:none;
-			}
-		}
-		.topicon{
-			padding-left:94%;
-		}
-		
-		.checkbtn{
-			font-size:30px;
-			float:left;
-			line-height:80px;
-			margin-left:0px;
-			cursor:pointer;
-			display:none;
-		}
-			
-		#check{
-			display:none;
-		}
-		
-		@media(max-width:1400px){
-			.topicon{
-				padding-left:92%;
-			}
-		}
-		@media(max-width:1200px){
-			.topicon{
-				padding-left:90%;
-			}
-		}
-		@media(max-width:800px){
-			.topicon{
-				padding-left:89%;
-			}
-			
-		.navigation{
-			margin-top:-10px;
-		}
-			
-		.checkbtn{
-			display:block;
-			color:black;
-			width:50px;
-		}
-		.ul{
-			position:fixed;
-			width:100%;
-			height:300px;
-			background:white;
-			z-index:5;
-			top:55px;
-			left:-100%;
-			text-align:start;
-			transition:all .5s;
-		}
-		nav ul li{
-			display:block;
-			margin:10px;
-			line-height:30px;
-		}
-		nav ul li a{
-			font-size:20px;
-		}
-		a:hover,a.active{
-			background:none;
-			color:#ffffff;
-		}
-		#check:checked~ul{
-			left:0;
-		}
-		nav label i{
-			position:absolute;
-			color:black;
-			font-size:25px;
-			top:15px;
-			z-index:10;
-		}
-	}
-	@media(max-width:500px){
-		.topicon{
-			padding-left:80%;
-		}
-	}
-	@media(max-width:400px){
-		.topicon{
-			padding-left:78%;
-		}
-	}
-	@media(max-width:350px){
-		.topicon{
-			padding-left:74%;
-		}
-	}
-	
-	.activity{
-		width:100%;
-		height:auto;
-		background:#fff;
-		margin-top:5px;
-		border-radius:8px;
-	}
-
-	.list-wrapper {
-	  position:relative;
-	}
-	.list-item-wrapper {
-	  margin-top:10px;
-	  position:relative;
-	}
-	.list-bullet {
-	  float:left;
-	  margin-right:20px;
-	  margin-left:10px;
-	  background:#3C38F8;
-	  height:20px;
-	  width:20px;
-	  line-height:30px;
-	  border-radius:100px;
-	  font-weight:700;
-	  font-size:10px;
-	  color:white;
-	  text-align:center;
-	  display:flex;
-	  justify-content:center;
-	  align-items:center;
-	  z-index:5;
-	}
-	.list-item {
-	  display:table-row;
-	  vertical-align:middle;
-	}
-	.list-title {
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 12px;
-		line-height: 16px;
-		color: #313038;
-
-	}
-	.list-text {
-		font-family: DM Sans;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 16px;
-		line-height: 21px;
-		color: #313038;
-		margin-bottom:7px;
-
-	}
-	.red-line {
-	  background:rgba(49, 48, 56, 0.15);
-	  z-index:1;
-	  width:1px;
-	  height:100%;
-	  position:absolute;
-	  left:20px;
-	}
-	.white-line {
-	  background:#FFF;
-	  z-index:-1;
-	  top:0px;
-	  width:1px;
-	  height:100%;
-	  position:absolute;
-	  left:15px;
-	}
-	.mycircle{
-		background-color:white;
-		height:8px;
-		width:8px;
-		border-radius:50%;
-		z-index:20;
-	}
-	.btnwidth{}
-	@media(max-width:400px){
-		.btnwidth{
-			width:120px;
-		}
-	}
-	.overviewbackground .d-flex{
-		padding-right:0px;
-	}
-	@media (min-width:1000px{
-		.overviewbackground .d-flex{
-			padding-right:2px;
-		}
-	}
-	
-	</style>
   </head>
   <body> 
-	<div class="container-fluid">
-		<div class="row">
-			<section class="col-lg-2 h-100 ml-0 bg-white">
+	<div class="container-fluid removeSidePadding">
+		<div class="pageRow">
+			<section class="ml-0 bg-white sideBarWidth">
 				<div class="d-flex flex-column navigation">
 				
-				<nav class="sideBar">
-					<input type="checkbox" id="check"/>
-					<label for="check" class="checkbtn">
-						<i class="fas fa-bars"></i>
-					</label>
-					
-					<ul class="ul list-unstyled">
-						<li class="mb-3 ml-n3 overviewnavigationactive">
-							<a class="pl-5">
-								Overview
-							</a>
-						</li>
-						<li class="mb-3 ml-n3 muted">
-							<a class="pl-5">
-								Objective
-							</a>
-						</li>
-						<li class="mb-3 ml-n3 muted">
-							<a class="pl-5">
-								Strategy Model
-							</a>
-						</li>
-						<li class="mb-3 ml-n3 muted">
-							<a class="pl-3 pl-5">
-								Timeline
-							</a>
-						</li>
-						<li class="mb-3 ml-n3 muted">
-							<a class="pl-3 pl-5">
-								Settings
-							</a>
-						</li>
-					</ul>
-					
-				</nav>
+					<nav class="sideBar">
+						<input type="checkbox" id="check"/>
+						<label for="check" class="checkbtn">
+							<i class="fas fa-bars"></i>
+						</label>
+						
+						<ul class="ul list-unstyled listActive">
+							<li class="mb-3 ml-n3 overviewnavigationactive">
+								<a class="sideBarAnchor">
+									Overview
+								</a>
+							</li>
+							<li class="mb-3 ml-n3 muted">
+								<a class="sideBarAnchor">
+									Objective
+								</a>
+							</li>
+							<li class="mb-3 ml-n3 muted">
+								<a class="sideBarAnchor">
+									Strategy Model
+								</a>
+							</li>
+							<li class="mb-3 ml-n3 muted">
+								<a class="sideBarAnchor">
+									Timeline
+								</a>
+							</li>
+							<li class="mb-3 ml-n3 muted">
+								<a class="sideBarAnchor">
+									Employees
+								</a>
+							</li>
+							<li class="mb-3 ml-n3 muted">
+								<a class="sideBarAnchor">
+									Settings
+								</a>
+							</li>
+						</ul>
+						
+					</nav>
 				</div>
 			</section>
 					
-			<section class="overviewbackground col-lg-10">
+			<section class="overviewbackground mainBarWidth">
 				<div class="d-flex col-lg-12">
-					<div class=" pt-3 ml-auto overviewbackground">
+					<div class="iconPadding ml-auto overviewbackground">
 						<img class="pr-3"src="./icon1.png"/>
 						<img src="./icon2.png"/>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-9 pb-3 overviewbackground" >
+				<div class="pageRow">
+					<div class="goodmorningWidth overviewbackground" >
 						<div class="d-flex greeting justify-content-between">
 							<h4>Good morning, Chandan!</h4>
-							<div class="dropdown">
-								 <select class="dropdown dropdownbutton" style="border:none; border-radius:3px;color:rgba(49, 48, 56, 0.3)">
-				
-									<option value="Challenges">2020-2021</option>
-									<option value="Projects">2020-2021</option>
-									<option value="Community">2020-2021</option>
-									<option value="Open source">2020-2021</option>
-								
-								</select>
-							 </div> 
-							 
-							 
-							
-							 
+							<div class="pageRow">
+								<button class="btn bg-white editButton mr-3">Enter Edit Mode</button>
+								<div class="dropdown">
+									 <select class="dropdown dropdownbutton" style="border:none; border-radius:3px;">
+					
+										<option value="Challenges">2020-2021</option>
+										<option value="Projects">2020-2021</option>
+										<option value="Community">2020-2021</option>
+										<option value="Open source">2020-2021</option>
+									
+									</select>
+								 </div> 
+							</div>
 						</div>
-						<div class="mt-3">	
+						<div class="">	
 							<h2 class="second float-left">Mission</h2><p class="height" style="border-radius:0px 3px 8px 0px">To provide widely accessible and affordable health care technology all over the world.</p>
 							<h2 class="second float-left">Vision</h2><p class="height" style="border-radius:0px 3px 8px 0px">We aim to be asia’s leading health care company.</p>
 							<div class="overflow-hidden">
 								<h2 class="second float-left">Values</h2>
 								<div class="d-flex overflow" style="border-top:2px solid #ff7f56;border-radius:0px 3px 8px 0px">
 									<table class="table bg-white value" style="border-radius:0px 3px 8px 0px">
-										<tr>
+										<tr style="border-top:2px solid #ff7f56">
 											<th class="valuepadding text-center" style="border-right:1px solid rgba(49, 48, 56, 0.15);">Accessible</th>
 											<th class="valuepadding text-center" style="border-right:1px solid rgba(49, 48, 56, 0.15);">Affordable</th>
 											<th class="valuepadding text-center" style="border-right:1px solid rgba(49, 48, 56, 0.15);">Modern</th>
@@ -526,9 +110,9 @@
 							</div>
 						
 							<div class="d-flex">
-								<h2 class="tableside float-left mt-2">SWOT</h2>
+								<h2 class="tableside float-left">SWOT</h2>
 								<div class="d-flex overflow">
-									<table class="table mt-2 bg-white width" style="border-radius:0px 3px 8px 0px">
+									<table class="table bg-white width" style="border-radius:0px 3px 8px 0px;border:none";>
 											<tr>
 												<th class="text-center" style="border-top:2px solid #39ACFF;border-right:1px solid rgba(49, 48, 56, 0.15);">Strengths</th>
 												<th class="text-center" style="border-top:2px solid #FF4539;border-right:1px solid rgba(49, 48, 56, 0.15);">Weaknesses</th>
@@ -584,7 +168,7 @@
 														</li>
 													</ul>
 												</td>
-												<td class="pb-1">
+												<td>
 													<ul>
 														<li>
 															 Lorem Ipsum dolor sit amet consectur adipiscing elit.
@@ -606,18 +190,19 @@
 							</div>
 						</div>
 					</div>
-					<section class="col-lg-3 overviewbackground">
+
+					<section class="activityWidth overviewbackground">
 						<div class="d-flex flex-column">
-							<div class="float-right mt-4 overviewbackground">
+							<div class="float-right searchMargin overviewbackground">
 								<div class="search-icon d-flex">
 									<i class="fas fa-search overviewsearchicon"></i>
 									<input type="text" placeholder="Search anything..." class="searchbar">
 								</div>
 							</div>
-							<div class="mt-3 pb-5">
+							<div class="activityMargin">
 								<div class="activity">
 													
-									<div class="p-3" style="border-bottom:1px solid rgba(49, 48, 56, 0.15);">
+									<div class= "activityHeader" style="border-bottom:1px solid rgba(49, 48, 56, 0.15);">
 										Activity
 									</div>
 					
@@ -684,9 +269,21 @@
 												<div class="list-title">04th August 2020, 08:58 AM</div>
 												<div class="list-text">Objective Completed 2 days behind - Hire 12 technical staff.. </div>
 											</div>
-										<div class="white-line"></div>	
+											<div class="white-line"></div>
+										</div>
 										
-										<div class="list-item-wrapper pb-3">
+										<div class="list-item-wrapper">
+											<div class="list-bullet">
+												<div class="mycircle"></div>
+											</div>
+											<div class="list-item">
+												<div class="list-title">04th August 2020, 08:58 AM</div>
+												<div class="list-text">Objective Completed 2 days behind - Hire 12 technical staff.. </div>
+											</div>
+											<div class="white-line"></div>
+										</div>
+										
+										<div class="list-item-wrapper pb-4">
 											<div class="list-bullet">
 												<div class="mycircle"></div>
 											</div>
@@ -694,7 +291,8 @@
 												<div class="list-title">03th August 2020, 09:51 PM</div>
 												<div class="list-text">You have been added to a new objective - Achieve an increase of $250,000 in annual turnover. </div>
 											</div>
-										<div class="white-line"></div>
+											<div class="white-line"></div>
+										</div>
 									</div>
 								</div>
 							</div>	
