@@ -39,39 +39,32 @@
 
 
     .iconPadding{
-        padding-top:40px;
+        padding-top:40px !important;
     }
 
     .searchMargin{
-        margin-top:24px !important;
-    }
-
-    .activityWidth{
-        min-width: 320px !important;
-        margin-left:24px !important; 
+        margin-top:16px !important;
     }
 
     .activityMargin{
-        margin-top:24px !important;
+        margin-top:16px !important;
         margin-bottom:32px !important;
     }
 
     .activityHeader{
-        font-size: 20px;
-        line-height: 26px;
-        padding-left: 24px !important;
-        padding-top: 19px !important;
-        padding-bottom: 19px !important;
+        font-size: 16px !important;
+        line-height: 21px !important;
+        padding-left: 16px !important;
+        padding-top: 14px !important;
+        padding-bottom: 13px !important;
     }
 
     /* sidebar */
 
     .sideBarAnchor{
-        padding-left:24px !important;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px !important;
-        line-height: 26px !important;
+        padding-left:16px !important;
+        font-size: 16px !important;
+        line-height: 21px !important;
     }
 
     .listActive{
@@ -100,166 +93,11 @@
         width:150px;
     }
 
-    .second{
-        height:120px !important;
-        font-size: 20px !important;
-        line-height: 26px !important; 
-        width:44px !important;
-        display:flex;
-        justify-content: center;
-        align-items:center;
-    }
-
-    .height{
-        height:120px !important;
-        font-weight: normal;
-        font-size: 20px !important;
-        line-height: 26px !important;
-        text-align: center;
-        color: #313038;
-    }
-
-    p {
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        border-top: 2px solid #ff7f56;
-        background-color:white;
-        margin-bottom:24px !important;
-    }
-
     .value{
-        height:120px !important; 
         margin-bottom: 22px !important; 
     }
-
-    .valuepadding{
-        padding-top:0px !important;
-        vertical-align: middle !important;
-    }
-
-    th{
-        font-style: normal;
-        font-weight: normal;
-        font-size: 20px !important;
-        line-height: 26px !important;
-        vertical-align: middle !important;
-        height: 70px;
-    }
-
-    .tableside{
-        height:390px !important;
-        width:55px !important;
-        font-size: 20px !important;
-        line-height: 26px !important;
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
     
-    td ul{
-        margin-left:8px !important;
-    }
     
-    td{
-        margin-left:16px !important;
-    }
-    td ul li{
-        font-size: 16px !important;
-        line-height: 21px !important;
-        color: #313038;
-        font-family:DM sans; 
-        padding-top:12px !important;
-        padding-bottom: 0 !important;   
-    }
-
-    .width{
-        min-width:500px;
-        height:390px !important;
-    }
-
-    /* activity */
-
-    .list-wrapper {
-        position:relative;
-        padding-right:24px !important;
-    }
-    
-    .list-item-wrapper {
-        margin-top:20px !important;
-        position:relative;
-    }
-    
-    .list-bullet {
-        float:left;
-        margin-right:9px !important;
-        margin-left:24px !important;
-        background:#3C38F8;
-        height:16px !important;
-        width:16px !important;
-        line-height:30px;
-        border-radius:100px;
-        font-weight:700;
-        font-size:10px;
-        color:white;
-        text-align:center;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        z-index:5;
-    }
-    
-    .list-item {
-        display:table-row;
-        vertical-align:middle;
-    }
-    
-    .list-title {
-        font-family: DM Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
-        color: #313038;
-        margin-bottom: 4px !important;
-    }
-    
-    .list-text {
-        font-family: DM Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px !important;
-        line-height: 21px !important;
-        color: #313038; 
-        margin-bottom:0 !important;  
-    }
-    
-    .red-line {
-        background:rgba(49, 48, 56, 0.15);
-        z-index:1;
-        width:1px;
-        height:100%;
-        position:absolute;
-        left:32px !important;
-    }
-    
-    .white-line {
-        background:#FFF;
-        z-index:-1;
-        top:0px;
-        width:1px;
-        height:100%;
-        position:absolute;
-        left:15px;
-    }
-    
-    .mycircle{
-        background-color:white;
-        height:8px;
-        width:8px;
-        border-radius:50%;
-        z-index:20;
-    }
 
 
 
